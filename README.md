@@ -1,4 +1,4 @@
-# CS440/640 AI - Neural Network Project
+# AI - Neural Network Project
 <html>
 
 <body>
