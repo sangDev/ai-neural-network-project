@@ -1,6 +1,4 @@
-# ai-neural-network-project
-bu ai neural network 2-layer and 3-layer nn
-
+# CS440/640 AI - Neural Network Project
 <html>
 <head>
 <title> CS440/640 AI - Neural Network Project  </title>
@@ -17,18 +15,16 @@ width="119" height="120"></a>
 
 <h1>Neural Network</h1>
 <p> 
- CS 440 P2 <br>
 Sang-Joon Lee<br>
- Tyrone Hou, Srivathsa Rajagopal, Huai-Chun (Daniel) Shih <br>
-    2/22/16
+Tyrone Hou, Srivathsa Rajagopal, Huai-Chun (Daniel) Shih <br>
+2/22/16
 </p>
 
 <div class="main-body">
 <hr>
 <h2> Problem Definition </h2>
 <p>
-The objective of this assignment is to understand how neural network works by implementing a simple 2-layer and 3-layer neural network (NN).  A 2-layer neural network with no-hidden layer is implemented to gain understanding of how the neural network fits on a linear data. A 3-layer neural network with 1 hidden layer is implemented to understand how the neural network performs on non-linear data.  We also investigated how each of the parameters has effect on the overall performance of the neural network, such as change in learning rate and number of hidden nodes. 
-    
+The objective of this assignment is to understand how neural network works by implementing a simple 2-layer and 3-layer neural network (NN).  A 2-layer neural network with no-hidden layer is implemented to gain understanding of how the neural network fits on a linear data. A 3-layer neural network with 1 hidden layer is implemented to understand how the neural network performs on non-linear data.  We also investigated how each of the parameters has effect on the overall performance of the neural network, such as change in learning rate and number of hidden nodes.   
 </p>
 
 <hr>
@@ -43,7 +39,7 @@ The three layer neural network was implemented similarly to the two layer networ
 </p>
 
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/other/backprop.png">         
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/other/backprop.PNG">         
 </p>  
     
 
@@ -52,11 +48,10 @@ The three layer neural network was implemented similarly to the two layer networ
 <p>
 We wrote a simple implementation of L2 regularization based on the weight update equation shown below, where Co is the original performance function, w is the weight, ng is the learning rate, and lambda is a regularization parameter passed into the neural network.
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/eqn.png">
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/eqn.png">
 </p>    
 The algorithm depends on a regularization paramater, lambda, which is passed into our neural network. We calculate a weight decay D based on the learning rate, lambda, and the number of training samples in the training data set.
 In our backpropagation procedure, each weight is then scaled by D before gradient descent is performed.
-</p>
 
 <hr>
 <h2>Experiments</h2>
@@ -81,7 +76,7 @@ num_epochs = 5000,
 cost = 0.659997642452
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps1_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps1_iter5000.png">    
 </p>
     
 
@@ -93,7 +88,7 @@ num_epochs = 5000,
 cost = 0.332508710691
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps0p0001_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps0p0001_iter5000.png">    
 </p>  
 
 <p style="text-indent:5em"> 
@@ -102,7 +97,7 @@ num_epochs = 5000,
 cost = 0.218827290546
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps0p001_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps0p001_iter5000.png">    
 </p>  
     
 
@@ -112,7 +107,7 @@ num_epochs = 5000,
 cost = 0.236282121054
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps0p005_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps0p005_iter5000.png">    
 </p>  
 
 <p style="text-indent:5em"> 
@@ -121,7 +116,7 @@ num_epochs = 5000,
 cost = 0.239947692706
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps0p01_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps0p01_iter5000.png">    
 </p>  
 
 <p style="text-indent:5em"> 
@@ -130,7 +125,7 @@ num_epochs = 5000,
 cost = 0.240688871517
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps0p05_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps0p05_iter5000.png">    
 </p>
 
 <p style="text-indent:5em"> 
@@ -139,7 +134,7 @@ num_epochs = 5000,
 cost = 0.240688872252
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps0p1_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps0p1_iter5000.png">    
 </p>
     
 <p style="text-indent:5em"> 
@@ -148,7 +143,7 @@ num_epochs = 5000,
 cost = 0.350587624091
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps0p5_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps0p5_iter5000.png">    
 </p>
 
 <p style="text-indent:5em"> 
@@ -157,7 +152,7 @@ num_epochs = 5000,
 cost = 0.659997642452
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps1_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps1_iter5000.png">    
 </p>
     
     
@@ -171,11 +166,11 @@ hidden node = 3,
 cost = TBD
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/3nn_eps0p1_epoch25000_hnode3.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/3nn_eps0p1_epoch25000_hnode3.png">    
      
 </p>    
     <p>
- <img src="neuralnetwork/e1.png">  
+ <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/e1.png">  
     </p>
 
 <p style="text-indent:5em"> 
@@ -185,8 +180,8 @@ hidden node = 3,
 cost = TBD  TBD
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/3nn_eps0p01_epoch25000_hnode3.png"> 
-    <img src="neuralnetwork/e01.png">        
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/3nn_eps0p01_epoch25000_hnode3.png"> 
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/e01.png">        
 </p>    
 
 <p style="text-indent:5em"> 
@@ -196,7 +191,7 @@ hidden node = 3,
 cost = 0.324249154503    
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/3nn_eps0p001_epoch25000_hnode3.png">            <img src="neuralnetwork/e001.png">            
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/3nn_eps0p001_epoch25000_hnode3.png">            <img src="neuralnetwork/e001.png">            
 </p>    
 
 <h3> Change in Number of Hidden Layer with 3-layer Neural Network Model</h3>
@@ -213,7 +208,7 @@ hidden node = 3,
 cost = 0.097086165446
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/3nn_eps0p05_epoch5000_hnode3.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/3nn_eps0p05_epoch5000_hnode3.png">    
 </p>    
 
 <p style="text-indent:5em"> 
@@ -223,7 +218,7 @@ hidden node = 5,
 cost = 0.13716572796
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/3nn_eps0p05_epoch5000_hnode5.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/3nn_eps0p05_epoch5000_hnode5.png">    
 </p>    
 
 <p style="text-indent:5em"> 
@@ -233,7 +228,7 @@ hidden node = 10,
 cost = 0.0841060319462
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/3nn_eps0p05_epoch5000_hnode10.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/3nn_eps0p05_epoch5000_hnode10.png">    
 </p>    
     
 <p style="text-indent:5em"> 
@@ -243,7 +238,7 @@ hidden node = 50,
 cost = 0.128328969713
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/3nn_eps0p05_epoch5000_hnode50.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/3nn_eps0p05_epoch5000_hnode50.png">    
 </p>    
 
 <h3> L2 Regularization Results </h3>
@@ -257,8 +252,8 @@ num_epochs = 5000,
 hidden node = 5
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/l2reg/Norm5.png">  
-     <img src="neuralnetwork/l2reg/l50.png">            
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/Norm5.png">  
+     <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/l50.png">            
 </p>  
 
 L2 Regularization with Lambda = 1
@@ -268,8 +263,8 @@ num_epochs = 5000,
 hidden node = 5
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/l2reg/L2_5_1.png">    
-<img src="neuralnetwork/l2reg/l51.png">                
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/L2_5_1.png">    
+<img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/l51.png">                
 </p>  
     
 L2 Regularization with Lambda = 5
@@ -279,8 +274,8 @@ num_epochs = 5000,
 hidden node = 5
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/l2reg/L2_5_5.png">    
-    <img src="neuralnetwork/l2reg/l55.png">            
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/L2_5_5.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/l55.png">            
 </p>  
     
 <h4> L2 Regularization with # of Hidden Nodes = 15 </h4>
@@ -292,8 +287,8 @@ num_epochs = 5000,
 hidden node = 15
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/l2reg/Norm15.png">    
-    <img src="neuralnetwork/l2reg/l150.png">            
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/Norm15.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/l150.png">            
 </p>  
 
 L2 Regularization with Lambda = 1
@@ -303,8 +298,8 @@ num_epochs = 5000,
 hidden node = 15
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/l2reg/L2_15_1.png">
-    <img src="neuralnetwork/l2reg/l151.png">            
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/L2_15_1.png">
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/l151.png">            
 </p>  
     
 L2 Regularization with Lambda = 5
@@ -314,8 +309,8 @@ num_epochs = 5000,
 hidden node = 15
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/l2reg/L2_15_5.png">    
-    <img src="neuralnetwork/l2reg/l155.png">            
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/L2_15_5.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/l2reg/l155.png">            
 </p>  
     
 <hr>
@@ -335,7 +330,7 @@ num_epochs = 5000,
 cost = 0.659997642452
 </p>    
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/2layer/2nn_eps1_iter5000.png">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/2layer/2nn_eps1_iter5000.png">    
 </p>
     
 
@@ -369,7 +364,7 @@ More often than not, we will encounter real world problems is something like the
 </p>
 
 <p style="text-indent:5em"> 
-    <img src="neuralnetwork/other/q4_pic.PNG">    
+    <img src="https://github.com/sangDev/ai-neural-network-project/blob/master/report/neuralnetwork/other/q4_pic.PNG">    
 </p> 
 
 <p>High learning rate could potentially make the result unstable wavering in and out of good and bad solutions.
