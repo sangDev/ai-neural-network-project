@@ -1,11 +1,5 @@
 # CS440/640 AI - Neural Network Project
 <html>
-<head>
-<title> CS440/640 AI - Neural Network Project  </title>
-<style>
-</style>
-
-</head>
 
 <body>
 <center>
