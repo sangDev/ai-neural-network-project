@@ -1,7 +1,6 @@
 """
 Created on Wed Feb 10 21:56:02 2016
 
-@author: ajjenjoshi
 """
 import numpy as np
 import matplotlib.pyplot as plt
